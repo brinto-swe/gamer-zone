@@ -1,9 +1,10 @@
 /* Fonts section  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
 
-:root{
-    --primary-color:#F948B2;
+:root {
+    --primary-color: #F948B2;
 }
+
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
@@ -58,18 +59,20 @@ body {
 
 
 /* Goat section  */
-.goat-section{
+.goat-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 48px;
 }
-#play-title{
+
+#play-title {
     font-size: 48px;
     font-weight: 600;
     margin: 0px;
 }
-#goat-title{
+
+#goat-title {
     font-size: 95px;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -78,30 +81,69 @@ body {
     -webkit-text-fill-color: transparent;
     margin: 0px;
 }
-.goat-details{
+
+.goat-details {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.goat-btn{
+
+.goat-btn {
     margin-top: 25px;
 }
-#sign-in-btn{
+
+.sign-in-btn,
+.know-more-btn {
     border: none;
     border-radius: 48px;
     padding: 21px 40px;
     background-color: var(--primary-color);
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    gap: 10px;
 }
-#rogue-btn{
+
+#rogue-btn {
     border: none;
     border-radius: 48px;
     padding: 21px 40px;
     background-color: #4EC5F7;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+    gap: 10px;
+}
+
+/* We Are Gamer Section  */
+.gamer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.gamer-container {
+    text-align: right;
+}
+
+.gamer-details {
+    width: 520px;
+    margin-right: 100px;
+}
+
+.gamer-container h1 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#purpose {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#unleash {
+    color: #534C64;
+    font-size: 28px;
+    font-weight: 700;
 }
