@@ -1,7 +1,9 @@
 /* Fonts section  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
 
-
+:root{
+    --primary-color:#F948B2;
+}
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
@@ -51,5 +53,55 @@ body {
 }
 
 #logo-title {
-    color: #F948B2;
+    color: var(--primary-color);
+}
+
+
+/* Goat section  */
+.goat-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 48px;
+}
+#play-title{
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0px;
+}
+#goat-title{
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+.goat-details{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.goat-btn{
+    margin-top: 25px;
+}
+#sign-in-btn{
+    border: none;
+    border-radius: 48px;
+    padding: 21px 40px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 10px;
+}
+#rogue-btn{
+    border: none;
+    border-radius: 48px;
+    padding: 21px 40px;
+    background-color: #4EC5F7;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
 }
