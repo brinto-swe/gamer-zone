@@ -1,0 +1,55 @@
+/* Fonts section  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header Section  */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#gamer-icon {
+    width: 86.041px;
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 56px;
+}
+
+.navigation {
+    display: flex;
+    gap: 32px;
+}
+
+.follow-section {
+    display: flex;
+    gap: 24px;
+}
+
+.follow-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-title {
+    font-weight: 700;
+}
+
+#logo-title {
+    color: #F948B2;
+}
