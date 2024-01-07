@@ -8,12 +8,13 @@
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    margin: auto 80px;
 }
 
 /* Header Section  */
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -53,7 +54,7 @@ body {
     font-weight: 700;
 }
 
-#logo-title {
+#logo-title, #annivarsary-title {
     color: var(--primary-color);
 }
 
@@ -61,7 +62,7 @@ body {
 /* Goat section  */
 .goat-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 48px;
 }
@@ -117,20 +118,20 @@ body {
 /* We Are Gamer Section  */
 .gamer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 60px;
 }
 
-.gamer-container {
-    text-align: right;
+.gamer-container, .gamer-details p {
+    text-align: end;
 }
 
 .gamer-details {
     width: 520px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 
-.gamer-container h1 {
+.gamer-container h1, #funny-videos{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -146,4 +147,20 @@ body {
     color: #534C64;
     font-size: 28px;
     font-weight: 700;
+}
+
+/* Online Games Section  */
+.online-games h1, p{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card p{
+    text-align: start;
+}
+
+.anniversary-container{
+    display: flex;
 }
