@@ -251,3 +251,18 @@ body {
     text-align: right;
     list-style: none;
 }
+
+/* Games Section  */
+.games-container{
+    display: flex;
+    gap: 55px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 120px;
+}
+.games{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: #0B0223;
+}
