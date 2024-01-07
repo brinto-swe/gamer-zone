@@ -1,6 +1,7 @@
 /* Fonts section  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
 
+
 :root {
     --primary-color: #F948B2;
 }
@@ -54,7 +55,8 @@ body {
     font-weight: 700;
 }
 
-#logo-title, #annivarsary-title {
+#logo-title,
+#annivarsary-title {
     color: var(--primary-color);
 }
 
@@ -122,7 +124,8 @@ body {
     margin-top: 60px;
 }
 
-.gamer-container, .gamer-details p {
+.gamer-container,
+.gamer-details p {
     text-align: end;
 }
 
@@ -131,7 +134,9 @@ body {
     /* margin-right: 100px; */
 }
 
-.gamer-container h1, #funny-videos, #play-games-title{
+.gamer-container h1,
+#funny-videos,
+#play-games-title {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -150,19 +155,30 @@ body {
 }
 
 /* Online Games Section  */
-.online-games h1, p{
+.online-games h1,
+p {
     text-align: center;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: space-between;
 }
-.card p{
+
+.card p {
     text-align: start;
+}
+.card img{
+    transition: opacity linear, 1s;
+}
+
+.card img:hover {
+    background: #0B0223;
+    opacity: 0.4;
 }
 
 /* 3rd Anniversary section  */
-.anniversary-container{
+.anniversary-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,48 +186,53 @@ body {
     gap: 80px;
     margin-top: 100px;
 }
-.annivarsay-details, .annivarsay-details p{
+
+.annivarsay-details,
+.annivarsay-details p {
     text-align: right;
     width: 300px;
 }
 
-.images2{
-    position: relative;    
+.images2 {
+    position: relative;
     margin-top: 380px;
 }
-.images1{
+
+.images1 {
     position: absolute;
     margin-left: 120px;
 }
 
 /* Play Games Online Section */
-.play-games-container{
+.play-games-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
     margin-top: 100px;
 }
-.play-games-details, .play-games-details p{
+
+.play-games-details,
+.play-games-details p {
     text-align: left;
     width: 300px;
 }
-.images4{
-    position: relative;    
+
+.images4 {
+    position: relative;
     margin-top: 380px;
     margin-left: 550px;
 }
-.images3{
+
+.images3 {
     position: absolute;
     margin-right: 120px;
 }
 
 /* Career Section  */
-.career-container{
+.career-container {
     background-color: var(--primary-color);
-    height: 700px;
-    width: 100%;
-    /* background-image: url(/images/Group\ 14.png); */
+    height: auto;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -219,22 +240,26 @@ body {
     padding-left: 100px;
     color: #ffffff;
 }
-.career-details{
-    /* width: 50%; */
-    /* padding: 0px 100px; */
+
+.career-details {
+    padding: 100px 0px;
 }
-.career-items{
+
+.career-items {
     display: flex;
     justify-content: space-between;
 }
-.career-lists{
+
+.career-lists {
     list-style: none;
 }
-.career-image{
+
+.career-image {
     position: relative;
 
 }
-#position-btn{
+
+#position-btn {
     border: none;
     border-radius: 48px;
     padding: 21px 40px;
@@ -244,25 +269,108 @@ body {
     font-weight: 600;
     margin-top: 30px;
 }
-.career-details h1,.career-details p{
+
+.career-details h1,
+.career-details p {
     text-align: left;
 }
-.position-address li{
+
+.position-address li {
     text-align: right;
     list-style: none;
 }
 
 /* Games Section  */
-.games-container{
+.games-container {
     display: flex;
     gap: 55px;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 120px;
 }
-.games{
+
+.games {
     display: flex;
     gap: 16px;
     align-items: center;
     color: #0B0223;
+    transition: padding, linear 0.3s;
+}
+.games:hover{
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/* Footer Section  */
+.footer {
+    background: #0B0223;
+    color: #ffffff;
+    margin-top: 130px;
+    height: auto;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-title {
+    color: #ffffff;
+}
+
+#footer-title {
+    color: var(--primary-color);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footer-nav li {
+    list-style: none;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 66px;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 74px;
+}
+
+.privacy a {
+    text-decoration: none;
+}
+
+.privacy a>li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.footer p {
+    margin-top: 28px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+
+/* Responsive Design  */
+@media screen and (max-width: 576px) {
+    
 }
