@@ -131,7 +131,6 @@ body {
 
 .gamer-details {
     width: 520px;
-    /* margin-right: 100px; */
 }
 
 .gamer-container h1,
@@ -168,7 +167,8 @@ p {
 .card p {
     text-align: start;
 }
-.card img{
+
+.card img {
     transition: opacity linear, 1s;
 }
 
@@ -185,6 +185,7 @@ p {
     margin-right: 150px;
     gap: 80px;
     margin-top: 100px;
+    width: 100%;
 }
 
 .annivarsay-details,
@@ -233,7 +234,6 @@ p {
 .career-container {
     background-color: var(--primary-color);
     height: auto;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     gap: 70px;
@@ -296,7 +296,8 @@ p {
     color: #0B0223;
     transition: padding, linear 0.3s;
 }
-.games:hover{
+
+.games:hover {
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
     border-radius: 50px;
@@ -372,5 +373,185 @@ p {
 
 /* Responsive Design  */
 @media screen and (max-width: 576px) {
-    
+    body{
+        margin: auto 10px;
+    }
+    /* Header Section  */
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .navigation {
+        gap: 0px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .follow-section {
+        align-items: center;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    /* GOAT Section  */
+    .goat-section {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .goat-section img {
+        width: 100%;
+    }
+
+    /* We Are Gamer Section  */
+    .gamer-container {
+        flex-direction: column;
+    }
+
+    .gamer-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gamer-details p {
+        text-align: center;
+    }
+
+    /* Online Games Section  */
+    .cards {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .card p {
+        text-align: center;
+    }
+
+    /* 3rd Anniversary Section  */
+    .anniversary-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .annivarsay-details,
+    .annivarsay-details p {
+        text-align: center;
+    }
+
+    .images1 {
+        margin-left: 100px;
+        width: 300px;
+    }
+
+    .images2 {
+        width: 200px;
+        margin-top: 200px;
+        margin-left: 30px;
+    }
+
+    .annivarsary-images {
+        width: 100%;
+    }
+
+    /* Play Games Online Section  */
+    .play-games-container{
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+    .play-games-details,
+    .play-games-details p {
+        text-align: center;
+    }
+    .play-games-images{
+        width: 100%;
+    }
+    .images3{
+        width: 300px;
+        margin-left: -70px;
+    }
+    .images4{
+        width: 200px;
+        margin-left: 130px;
+        margin-top: 170px;
+    }
+
+    /* Career Section  */
+    .career-container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .career-details{
+        padding: 80px 20px;
+    }
+    .career-container img{
+        width: 350px;
+    }
+    .position-address li {
+        font-size: 12px;
+    }
+    .career-lists{
+        font-size: 12px;
+    }
+    .career-items{
+        width: 95%;
+    }
+    #position-btn{
+        margin-left: 50px;
+    }
+
+    /* Games Section  */
+    .games-container{
+        display: flex;
+        gap: 10px;
+        margin-top: 60px;
+    }
+    .games {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: #0B0223;
+        transition: padding, linear 0.3s;
+    }
+    .games h2{
+        font-size: 10px;
+    }
+    .games img{
+        width: 30px;
+    }
+    .games:hover {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        border-radius: 50px;
+        padding: 4px;
+    }
+
+    /* Footer Section  */
+    .footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .social-media{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 60px;
+    }
+    .privacy{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
